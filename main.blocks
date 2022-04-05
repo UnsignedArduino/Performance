@@ -1,1 +1,1 @@
-<xml xmlns="https://developers.google.com/blockly/xml"><block type="pxt-on-start" id="g!e*FdJSsft*h`JxZdma" x="0" y="0"></block></xml>
+<xml xmlns="https://developers.google.com/blockly/xml"><block type="pxt-on-start" id="g!e*FdJSsft*h`JxZdma" x="0" y="0"><statement name="HANDLER"><block type="stats_turnStats" id="pb9tC)P_M@5|PZ}D#shi"><value name="on"><shadow type="toggleOnOff" id="i;h2-PNt9GNsz2~$Eb)4"><field name="on">true</field></shadow></value></block></statement></block></xml>
