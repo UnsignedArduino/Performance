@@ -39,6 +39,16 @@ function press_overlap (index: number, pressed: boolean) {
     } else {
         sprites_overlappers[index].setImage(overlapper_images[index])
     }
+    overlapping = get_overlapping_tile(sprites_overlappers[index])
+    if (!(overlapping)) {
+        scene.cameraShake(2, 100)
+        return
+    }
+    sprites.setDataBoolean(overlapping, "played", true)
+    overlapping.destroy()
+    timer.background(function () {
+        music.playTone(sprites.readDataNumber(overlapping, "frequency"), sprites.readDataNumber(overlapping, "duration"))
+    })
 }
 function handle_note (channel: number, note: number, frequency: number, duration: number) {
     if (channel == 0) {
@@ -51,6 +61,7 @@ function handle_note (channel: number, note: number, frequency: number, duration
         sprite_tile.setFlag(SpriteFlag.AutoDestroy, true)
         sprites.setDataNumber(sprite_tile, "frequency", frequency)
         sprites.setDataNumber(sprite_tile, "duration", duration)
+        sprites.setDataBoolean(sprite_tile, "played", false)
     } else {
         timer.after((scene.screenHeight() - 16) / 50 * 1000, function () {
             timer.background(function () {
@@ -116,8 +127,24 @@ function play_song (song: any[]) {
     MusicalImages.set_queue(song)
     MusicalImages.play()
 }
+function get_overlapping_tile (overlapper: Sprite) {
+    for (let sprite_tile of sprites.allOfKind(SpriteKind.Tile)) {
+        if (overlapper.overlapsWith(sprite_tile)) {
+            return sprite_tile
+        }
+    }
+    return [][0]
+}
+sprites.onDestroyed(SpriteKind.Player, function (sprite) {
+    if (MusicalImages.is_playing()) {
+        if (!(sprites.readDataBoolean(sprite, "played"))) {
+            scene.cameraShake(2, 100)
+        }
+    }
+})
 let sprite_tile: Sprite = null
 let image2: Image = null
+let overlapping: Sprite = null
 let overlapper_images_pressed: Image[] = []
 let overlapper_images: Image[] = []
 let sprites_overlappers: Sprite[] = []
