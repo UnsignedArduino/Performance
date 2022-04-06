@@ -3,13 +3,16 @@
     "description": "",
     "dependencies": {
         "device": "*",
-        "Stats": "github:UnsignedArduino/Stats#9102333e1ca6cbaf8a979ceb252274b2f09b9005"
+        "Stats": "github:UnsignedArduino/Stats#9102333e1ca6cbaf8a979ceb252274b2f09b9005",
+        "Musical-Images": "github:UnsignedArduino/Musical-Images#v2.1.2"
     },
     "files": [
         "main.blocks",
         "main.ts",
         "README.md",
-        "assets.json"
+        "assets.json",
+        "images.g.jres",
+        "images.g.ts"
     ],
     "testFiles": [
         "test.ts"
