@@ -9,11 +9,6 @@
         "mimeType": "image/x-mkcd-f4",
         "displayName": "overlap_bar"
     },
-    "image3": {
-        "data": "hwQQABAAAAD//////////w8AAAAAAADwDwAAAAAAAPAPAADwDwAA8A8AAP//AADwDwDw//8PAPAPAP////8A8A8AAPAPAADwDwAA8A8AAPAPAADwDwAA8A8AAPAPAADwDwAA8A8AAPAPAADwDwAA8A8AAAAAAADwDwAAAAAAAPD//////////w==",
-        "mimeType": "image/x-mkcd-f4",
-        "displayName": "left_overlap"
-    },
     "image4": {
         "data": "hwQQABAAAAD//////////w8AAAAAAADwDwAAAAAAAPAPAAAAAAAA8A8AAA8AAADwDwDwDwAAAPAPAP8PAAAA8A/w/////w/wD/D/////D/APAP8PAAAA8A8A8A8AAADwDwAADwAAAPAPAAAAAAAA8A8AAAAAAADwDwAAAAAAAPD//////////w==",
         "mimeType": "image/x-mkcd-f4",
@@ -28,6 +23,31 @@
         "data": "hwQQABAAAAD//////////w8AAAAAAADwDwAAAAAAAPAPAAAAAAAA8A8AAADwAADwDwAAAPAPAPAPAAAA8P8A8A/w/////w/wD/D/////D/APAAAA8P8A8A8AAADwDwDwDwAAAPAAAPAPAAAAAAAA8A8AAAAAAADwDwAAAAAAAPD//////////w==",
         "mimeType": "image/x-mkcd-f4",
         "displayName": "down_overlap"
+    },
+    "image3": {
+        "data": "hwQQABAAAAD//////////w8AAAAAAADwDwAAAAAAAPAPAADwDwAA8A8AAP//AADwDwDw//8PAPAPAP////8A8A8AAPAPAADwDwAA8A8AAPAPAADwDwAA8A8AAPAPAADwDwAA8A8AAPAPAADwDwAA8A8AAAAAAADwDwAAAAAAAPD//////////w==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "left_overlap"
+    },
+    "image7": {
+        "data": "hwQQABAAAAD//////////w8AAAAAAADwDwAAAAAAAPAPAACQCQAA8A8AAJmZAADwDwCQmZkJAPAPAJmZmZkA8A8AAJAJAADwDwAAkAkAAPAPAACQCQAA8A8AAJAJAADwDwAAkAkAAPAPAACQCQAA8A8AAAAAAADwDwAAAAAAAPD//////////w==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "left_overlap_pressed"
+    },
+    "image8": {
+        "data": "hwQQABAAAAD//////////w8AAAAAAADwDwAAAAAAAPAPAAAAAAAA8A8AAAcAAADwDwBwBwAAAPAPAHcHAAAA8A9wd3d3dwfwD3B3d3d3B/APAHcHAAAA8A8AcAcAAADwDwAABwAAAPAPAAAAAAAA8A8AAAAAAADwDwAAAAAAAPD//////////w==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "up_overlap_pressed"
+    },
+    "image9": {
+        "data": "hwQQABAAAAD//////////w8AAAAAAADwDwAAAAAAAPAPAAAAAAAA8A8AAABQAADwDwAAAFAFAPAPAAAAUFUA8A9QVVVVVQXwD1BVVVVVBfAPAAAAUFUA8A8AAABQBQDwDwAAAFAAAPAPAAAAAAAA8A8AAAAAAADwDwAAAAAAAPD//////////w==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "down_overlap_pressed"
+    },
+    "image10": {
+        "data": "hwQQABAAAAD//////////w8AAAAAAADwDwAAAAAAAPAPAAAgAgAA8A8AACACAADwDwAAIAIAAPAPAAAgAgAA8A8AACACAADwDwAAIAIAAPAPACIiIiIA8A8AICIiAgDwDwAAIiIAAPAPAAAgAgAA8A8AAAAAAADwDwAAAAAAAPD//////////w==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "right_overlap_pressed"
     },
     "anim1": {
         "namespace": "myAnimations",

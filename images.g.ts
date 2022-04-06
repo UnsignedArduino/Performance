@@ -145,25 +145,6 @@ f..............f..............f..............f..............f
 f..............f..............f..............f..............f
 fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
 `;
-            case "image3":
-            case "left_overlap":return img`
-f f f f f f f f f f f f f f f f 
-f . . . . . . . . . . . . . . f 
-f . . . . . . . . . . . . . . f 
-f . . . . . . . . . . . . . . f 
-f . . . . . f . . . . . . . . f 
-f . . . . f f . . . . . . . . f 
-f . . . f f f . . . . . . . . f 
-f . . f f f f f f f f f f . . f 
-f . . f f f f f f f f f f . . f 
-f . . . f f f . . . . . . . . f 
-f . . . . f f . . . . . . . . f 
-f . . . . . f . . . . . . . . f 
-f . . . . . . . . . . . . . . f 
-f . . . . . . . . . . . . . . f 
-f . . . . . . . . . . . . . . f 
-f f f f f f f f f f f f f f f f 
-`;
             case "image4":
             case "up_overlap":return img`
 f f f f f f f f f f f f f f f f 
@@ -217,6 +198,101 @@ f . . . f f f f f f f f . . . f
 f . . . . f f f f f f . . . . f 
 f . . . . . f f f f . . . . . f 
 f . . . . . . f f . . . . . . f 
+f . . . . . . . . . . . . . . f 
+f . . . . . . . . . . . . . . f 
+f f f f f f f f f f f f f f f f 
+`;
+            case "image3":
+            case "left_overlap":return img`
+f f f f f f f f f f f f f f f f 
+f . . . . . . . . . . . . . . f 
+f . . . . . . . . . . . . . . f 
+f . . . . . . . . . . . . . . f 
+f . . . . . f . . . . . . . . f 
+f . . . . f f . . . . . . . . f 
+f . . . f f f . . . . . . . . f 
+f . . f f f f f f f f f f . . f 
+f . . f f f f f f f f f f . . f 
+f . . . f f f . . . . . . . . f 
+f . . . . f f . . . . . . . . f 
+f . . . . . f . . . . . . . . f 
+f . . . . . . . . . . . . . . f 
+f . . . . . . . . . . . . . . f 
+f . . . . . . . . . . . . . . f 
+f f f f f f f f f f f f f f f f 
+`;
+            case "image7":
+            case "left_overlap_pressed":return img`
+f f f f f f f f f f f f f f f f 
+f . . . . . . . . . . . . . . f 
+f . . . . . . . . . . . . . . f 
+f . . . . . . . . . . . . . . f 
+f . . . . . 9 . . . . . . . . f 
+f . . . . 9 9 . . . . . . . . f 
+f . . . 9 9 9 . . . . . . . . f 
+f . . 9 9 9 9 9 9 9 9 9 9 . . f 
+f . . 9 9 9 9 9 9 9 9 9 9 . . f 
+f . . . 9 9 9 . . . . . . . . f 
+f . . . . 9 9 . . . . . . . . f 
+f . . . . . 9 . . . . . . . . f 
+f . . . . . . . . . . . . . . f 
+f . . . . . . . . . . . . . . f 
+f . . . . . . . . . . . . . . f 
+f f f f f f f f f f f f f f f f 
+`;
+            case "image8":
+            case "up_overlap_pressed":return img`
+f f f f f f f f f f f f f f f f 
+f . . . . . . . . . . . . . . f 
+f . . . . . . . . . . . . . . f 
+f . . . . . . 7 7 . . . . . . f 
+f . . . . . 7 7 7 7 . . . . . f 
+f . . . . 7 7 7 7 7 7 . . . . f 
+f . . . 7 7 7 7 7 7 7 7 . . . f 
+f . . . . . . 7 7 . . . . . . f 
+f . . . . . . 7 7 . . . . . . f 
+f . . . . . . 7 7 . . . . . . f 
+f . . . . . . 7 7 . . . . . . f 
+f . . . . . . 7 7 . . . . . . f 
+f . . . . . . 7 7 . . . . . . f 
+f . . . . . . . . . . . . . . f 
+f . . . . . . . . . . . . . . f 
+f f f f f f f f f f f f f f f f 
+`;
+            case "image9":
+            case "down_overlap_pressed":return img`
+f f f f f f f f f f f f f f f f 
+f . . . . . . . . . . . . . . f 
+f . . . . . . . . . . . . . . f 
+f . . . . . . 5 5 . . . . . . f 
+f . . . . . . 5 5 . . . . . . f 
+f . . . . . . 5 5 . . . . . . f 
+f . . . . . . 5 5 . . . . . . f 
+f . . . . . . 5 5 . . . . . . f 
+f . . . . . . 5 5 . . . . . . f 
+f . . . 5 5 5 5 5 5 5 5 . . . f 
+f . . . . 5 5 5 5 5 5 . . . . f 
+f . . . . . 5 5 5 5 . . . . . f 
+f . . . . . . 5 5 . . . . . . f 
+f . . . . . . . . . . . . . . f 
+f . . . . . . . . . . . . . . f 
+f f f f f f f f f f f f f f f f 
+`;
+            case "image10":
+            case "right_overlap_pressed":return img`
+f f f f f f f f f f f f f f f f 
+f . . . . . . . . . . . . . . f 
+f . . . . . . . . . . . . . . f 
+f . . . . . . . . . . . . . . f 
+f . . . . . . . . 2 . . . . . f 
+f . . . . . . . . 2 2 . . . . f 
+f . . . . . . . . 2 2 2 . . . f 
+f . . 2 2 2 2 2 2 2 2 2 2 . . f 
+f . . 2 2 2 2 2 2 2 2 2 2 . . f 
+f . . . . . . . . 2 2 2 . . . f 
+f . . . . . . . . 2 2 . . . . f 
+f . . . . . . . . 2 . . . . . f 
+f . . . . . . . . . . . . . . f 
 f . . . . . . . . . . . . . . f 
 f . . . . . . . . . . . . . . f 
 f f f f f f f f f f f f f f f f 

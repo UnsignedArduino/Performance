@@ -10,13 +10,32 @@ function setup_bars () {
         sprite_bar.left = scene.screenWidth() / 2 - 30 + 15 * index
     }
     sprites_overlappers = []
-    for (let image2 of [
+    overlapper_images = [
     assets.image`left_overlap`,
     assets.image`up_overlap`,
     assets.image`down_overlap`,
     assets.image`right_overlap`
-    ]) {
+    ]
+    overlapper_images_pressed = [
+    assets.image`left_overlap_pressed`,
+    assets.image`up_overlap_pressed`,
+    assets.image`down_overlap_pressed`,
+    assets.image`right_overlap_pressed`
+    ]
+    for (let image2 of overlapper_images) {
         create_overlap(image2)
+    }
+}
+controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
+    if (MusicalImages.is_playing()) {
+        press_overlap(1, true)
+    }
+})
+function press_overlap (index: number, pressed: boolean) {
+    if (pressed) {
+        sprites_overlappers[index].setImage(overlapper_images_pressed[index])
+    } else {
+        sprites_overlappers[index].setImage(overlapper_images[index])
     }
 }
 function handle_note (channel: number, note: number, frequency: number, duration: number) {
@@ -29,14 +48,49 @@ function handle_note (channel: number, note: number, frequency: number, duration
 function prepare_background () {
     scene.setBackgroundColor(13)
 }
+controller.down.onEvent(ControllerButtonEvent.Released, function () {
+    if (MusicalImages.is_playing()) {
+        press_overlap(2, false)
+    }
+})
+controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
+    if (MusicalImages.is_playing()) {
+        press_overlap(0, true)
+    }
+})
+controller.right.onEvent(ControllerButtonEvent.Released, function () {
+    if (MusicalImages.is_playing()) {
+        press_overlap(3, false)
+    }
+})
+controller.left.onEvent(ControllerButtonEvent.Released, function () {
+    if (MusicalImages.is_playing()) {
+        press_overlap(0, false)
+    }
+})
+controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
+    if (MusicalImages.is_playing()) {
+        press_overlap(3, true)
+    }
+})
 function create_overlap (image2: Image) {
     sprites_overlappers.push(sprites.create(image2, SpriteKind.Overlapper))
     sprites_overlappers[sprites_overlappers.length - 1].left = scene.screenWidth() / 2 - 30 + 15 * (sprites_overlappers.length - 1)
     sprites_overlappers[sprites_overlappers.length - 1].bottom = scene.screenHeight() - 8
 }
+controller.up.onEvent(ControllerButtonEvent.Released, function () {
+    if (MusicalImages.is_playing()) {
+        press_overlap(1, false)
+    }
+})
 MusicalImages.set_handler(function (channels, notes, frequencys, durations) {
     for (let index = 0; index <= channels.length - 1; index++) {
         handle_note(channels[index], notes[index], frequencys[index], durations[index])
+    }
+})
+controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
+    if (MusicalImages.is_playing()) {
+        press_overlap(2, true)
     }
 })
 function play_song (song: any[]) {
@@ -47,6 +101,8 @@ function play_song (song: any[]) {
     MusicalImages.set_queue(song)
     MusicalImages.play()
 }
+let overlapper_images_pressed: Image[] = []
+let overlapper_images: Image[] = []
 let sprites_overlappers: Sprite[] = []
 let sprite_bar: Sprite = null
 stats.turnStats(true)
