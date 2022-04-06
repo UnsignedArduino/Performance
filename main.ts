@@ -38,14 +38,17 @@ function press_overlap (index: number, pressed: boolean) {
         sprites_overlappers[index].setImage(overlapper_images_pressed[index])
     } else {
         sprites_overlappers[index].setImage(overlapper_images[index])
+        return
     }
     overlapping = get_overlapping_tile(sprites_overlappers[index])
     if (!(overlapping)) {
         scene.cameraShake(2, 100)
+        info.changeLifeBy(-1)
         return
     }
     sprites.setDataBoolean(overlapping, "played", true)
     overlapping.destroy()
+    info.changeScoreBy(10 - Math.constrain(Math.abs(sprites_overlappers[index].y - overlapping.bottom), 0, 9))
     timer.background(function () {
         music.playTone(sprites.readDataNumber(overlapping, "frequency"), sprites.readDataNumber(overlapping, "duration"))
     })
@@ -56,7 +59,7 @@ function handle_note (channel: number, note: number, frequency: number, duration
         image2.fill(1)
         sprite_tile = sprites.create(image2, SpriteKind.Tile)
         sprite_tile.bottom = 1
-        sprite_tile.x = sprites_overlappers[(note + 9) % 12 % 4].x
+        sprite_tile.x = sprites_overlappers[Math.floor((note + 9) % 12 / 2) % 4].x
         sprite_tile.vy = 50
         sprite_tile.setFlag(SpriteFlag.AutoDestroy, true)
         sprites.setDataNumber(sprite_tile, "frequency", frequency)
@@ -70,6 +73,14 @@ function handle_note (channel: number, note: number, frequency: number, duration
         })
     }
 }
+sprites.onDestroyed(SpriteKind.Tile, function (sprite) {
+    if (MusicalImages.is_playing()) {
+        if (!(sprites.readDataBoolean(sprite, "played"))) {
+            scene.cameraShake(2, 100)
+            info.changeLifeBy(-1)
+        }
+    }
+})
 function prepare_background () {
     scene.setBackgroundColor(13)
 }
@@ -125,6 +136,8 @@ function play_song (song: any[]) {
     music.setVolume(20)
     MusicalImages.init_musical_image()
     MusicalImages.set_queue(song)
+    info.setScore(0)
+    info.setLife(100)
     MusicalImages.play()
 }
 function get_overlapping_tile (overlapper: Sprite) {
@@ -135,13 +148,6 @@ function get_overlapping_tile (overlapper: Sprite) {
     }
     return [][0]
 }
-sprites.onDestroyed(SpriteKind.Player, function (sprite) {
-    if (MusicalImages.is_playing()) {
-        if (!(sprites.readDataBoolean(sprite, "played"))) {
-            scene.cameraShake(2, 100)
-        }
-    }
-})
 let sprite_tile: Sprite = null
 let image2: Image = null
 let overlapping: Sprite = null
