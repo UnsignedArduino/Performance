@@ -4,6 +4,31 @@
         "mimeType": "image/x-mkcd-f4",
         "displayName": "bar"
     },
+    "image2": {
+        "data": "hwQ9ABAAAAD//////////w8AAAAAAADwDwAAAAAAAPAPAADwDwAA8A8AAP//AADwDwDw//8PAPAPAP////8A8A8AAPAPAADwDwAA8A8AAPAPAADwDwAA8A8AAPAPAADwDwAA8A8AAPAPAADwDwAA8A8AAAAAAADwDwAAAAAAAPD//////////w8AAAAAAADwDwAAAAAAAPAPAAAAAAAA8A8AAA8AAADwDwDwDwAAAPAPAP8PAAAA8A/w/////w/wD/D/////D/APAP8PAAAA8A8A8A8AAADwDwAADwAAAPAPAAAAAAAA8A8AAAAAAADwDwAAAAAAAPD//////////w8AAAAAAADwDwAAAAAAAPAPAAAAAAAA8A8AAADwAADwDwAAAPAPAPAPAAAA8P8A8A/w/////w/wD/D/////D/APAAAA8P8A8A8AAADwDwDwDwAAAPAAAPAPAAAAAAAA8A8AAAAAAADwDwAAAAAAAPD//////////w8AAAAAAADwDwAAAAAAAPAPAADwDwAA8A8AAPAPAADwDwAA8A8AAPAPAADwDwAA8A8AAPAPAADwDwAA8A8AAPAPAP////8A8A8A8P//DwDwDwAA//8AAPAPAADwDwAA8A8AAAAAAADwDwAAAAAAAPD//////////w==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "overlap_bar"
+    },
+    "image3": {
+        "data": "hwQQABAAAAD//////////w8AAAAAAADwDwAAAAAAAPAPAADwDwAA8A8AAP//AADwDwDw//8PAPAPAP////8A8A8AAPAPAADwDwAA8A8AAPAPAADwDwAA8A8AAPAPAADwDwAA8A8AAPAPAADwDwAA8A8AAAAAAADwDwAAAAAAAPD//////////w==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "left_overlap"
+    },
+    "image4": {
+        "data": "hwQQABAAAAD//////////w8AAAAAAADwDwAAAAAAAPAPAAAAAAAA8A8AAA8AAADwDwDwDwAAAPAPAP8PAAAA8A/w/////w/wD/D/////D/APAP8PAAAA8A8A8A8AAADwDwAADwAAAPAPAAAAAAAA8A8AAAAAAADwDwAAAAAAAPD//////////w==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "up_overlap"
+    },
+    "image6": {
+        "data": "hwQQABAAAAD//////////w8AAAAAAADwDwAAAAAAAPAPAADwDwAA8A8AAPAPAADwDwAA8A8AAPAPAADwDwAA8A8AAPAPAADwDwAA8A8AAPAPAP////8A8A8A8P//DwDwDwAA//8AAPAPAADwDwAA8A8AAAAAAADwDwAAAAAAAPD//////////w==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "right_overlap"
+    },
+    "image5": {
+        "data": "hwQQABAAAAD//////////w8AAAAAAADwDwAAAAAAAPAPAAAAAAAA8A8AAADwAADwDwAAAPAPAPAPAAAA8P8A8A/w/////w/wD/D/////D/APAAAA8P8A8A8AAADwDwDwDwAAAPAAAPAPAAAAAAAA8A8AAAAAAADwDwAAAAAAAPD//////////w==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "down_overlap"
+    },
     "anim1": {
         "namespace": "myAnimations",
         "id": "anim1",

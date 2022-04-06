@@ -126,6 +126,101 @@ f..............f
 f..............f
 f..............f
 `;
+            case "image2":
+            case "overlap_bar":return img`
+fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+f..............f..............f..............f..............f
+f..............f..............f..............f..............f
+f..............f......ff......f......ff......f..............f
+f.....f........f.....ffff.....f......ff......f........f.....f
+f....ff........f....ffffff....f......ff......f........ff....f
+f...fff........f...ffffffff...f......ff......f........fff...f
+f..ffffffffff..f......ff......f......ff......f..ffffffffff..f
+f..ffffffffff..f......ff......f......ff......f..ffffffffff..f
+f...fff........f......ff......f...ffffffff...f........fff...f
+f....ff........f......ff......f....ffffff....f........ff....f
+f.....f........f......ff......f.....ffff.....f........f.....f
+f..............f......ff......f......ff......f..............f
+f..............f..............f..............f..............f
+f..............f..............f..............f..............f
+fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+`;
+            case "image3":
+            case "left_overlap":return img`
+f f f f f f f f f f f f f f f f 
+f . . . . . . . . . . . . . . f 
+f . . . . . . . . . . . . . . f 
+f . . . . . . . . . . . . . . f 
+f . . . . . f . . . . . . . . f 
+f . . . . f f . . . . . . . . f 
+f . . . f f f . . . . . . . . f 
+f . . f f f f f f f f f f . . f 
+f . . f f f f f f f f f f . . f 
+f . . . f f f . . . . . . . . f 
+f . . . . f f . . . . . . . . f 
+f . . . . . f . . . . . . . . f 
+f . . . . . . . . . . . . . . f 
+f . . . . . . . . . . . . . . f 
+f . . . . . . . . . . . . . . f 
+f f f f f f f f f f f f f f f f 
+`;
+            case "image4":
+            case "up_overlap":return img`
+f f f f f f f f f f f f f f f f 
+f . . . . . . . . . . . . . . f 
+f . . . . . . . . . . . . . . f 
+f . . . . . . f f . . . . . . f 
+f . . . . . f f f f . . . . . f 
+f . . . . f f f f f f . . . . f 
+f . . . f f f f f f f f . . . f 
+f . . . . . . f f . . . . . . f 
+f . . . . . . f f . . . . . . f 
+f . . . . . . f f . . . . . . f 
+f . . . . . . f f . . . . . . f 
+f . . . . . . f f . . . . . . f 
+f . . . . . . f f . . . . . . f 
+f . . . . . . . . . . . . . . f 
+f . . . . . . . . . . . . . . f 
+f f f f f f f f f f f f f f f f 
+`;
+            case "image6":
+            case "right_overlap":return img`
+f f f f f f f f f f f f f f f f 
+f . . . . . . . . . . . . . . f 
+f . . . . . . . . . . . . . . f 
+f . . . . . . . . . . . . . . f 
+f . . . . . . . . f . . . . . f 
+f . . . . . . . . f f . . . . f 
+f . . . . . . . . f f f . . . f 
+f . . f f f f f f f f f f . . f 
+f . . f f f f f f f f f f . . f 
+f . . . . . . . . f f f . . . f 
+f . . . . . . . . f f . . . . f 
+f . . . . . . . . f . . . . . f 
+f . . . . . . . . . . . . . . f 
+f . . . . . . . . . . . . . . f 
+f . . . . . . . . . . . . . . f 
+f f f f f f f f f f f f f f f f 
+`;
+            case "image5":
+            case "down_overlap":return img`
+f f f f f f f f f f f f f f f f 
+f . . . . . . . . . . . . . . f 
+f . . . . . . . . . . . . . . f 
+f . . . . . . f f . . . . . . f 
+f . . . . . . f f . . . . . . f 
+f . . . . . . f f . . . . . . f 
+f . . . . . . f f . . . . . . f 
+f . . . . . . f f . . . . . . f 
+f . . . . . . f f . . . . . . f 
+f . . . f f f f f f f f . . . f 
+f . . . . f f f f f f . . . . f 
+f . . . . . f f f f . . . . . f 
+f . . . . . . f f . . . . . . f 
+f . . . . . . . . . . . . . . f 
+f . . . . . . . . . . . . . . f 
+f f f f f f f f f f f f f f f f 
+`;
         }
         return null;
     })
